@@ -1,6 +1,6 @@
 import React from 'react';
-import ig from '../assets/ig.jpg';
-import line from '../assets/line.jpg';
+import Instagram from '../assets/ig.jpg';
+import Line from '../assets/line.jpg';
 
 const Footer = () => {
   const Coba = (link) => {
@@ -12,13 +12,12 @@ const Footer = () => {
       </>
     );
   };
-  const Ig = (props) => {
-    const { id } = props;
+  const Ig = (ig) => {
     return (
       <>
         Instagram :
         {' '}
-        <a href={id.name}>{id.nama}</a>
+        <a href={ig.name}>{ig.nama}</a>
       </>
     );
   };
@@ -46,8 +45,8 @@ const Footer = () => {
             {listContacts}
           </div>
           <div className="f-rightcolumn">
-            <img src={ig} alt="ig" />
-            <img src={line} alt="line" />
+            <img src={Instagram} alt="ig" />
+            <img src={Line} alt="line" />
           </div>
         </div>
       </div>
