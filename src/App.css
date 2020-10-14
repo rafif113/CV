@@ -1,3 +1,166 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 10px;
+  background: #f1f1f1;
+  align-items: center;
+  animation: fadeIn 2s;
+}
+h2 {
+  font-family: arvo;
+  color: #4a2933;
+  font-weight: bold;
+}
+p {
+  color: #4a2933;
+}
+td {
+  padding-top: 10px;
+  font-weight: bold;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  overflow: hidden;
+  padding: 10px;
+}
+.header {
+  padding: 30px;
+}
+.row {
+  background: cornflowerblue;
+  box-sizing: border-box;
+}
+.h-leftcolumn {
+  float: left;
+  position: relative;
+  width: 35%;
+}
+.h-rightcolumn {
+  float: left;
+  width: 65%;
+}
+.h-leftcolumn img {
+  border-radius: 50%;
+  width: 190px;
+  height: 170px;
+}
+.h-rightcolumn h1 {
+  font-family: arvo;
+  color: #4a2933;
+  font-weight: bold;
+  font-size: 310%;
   text-align: center;
+}
+hr {
+  margin: -26px 0;
+}
+hr.style1 {
+  border: 0;
+  height: 3px;
+  background-image: -webkit-linear-gradient(left, #dadada, #4a2933, #dadada);
+}
+p.style1 {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 90%;
+  color: #965361;
+  font-weight: bold;
+  opacity: 0.9;
+}
+hr.style2 {
+  border: 0;
+  height: 2px;
+  width: 75%;
+  position: relative;
+  background-image: -webkit-linear-gradient(left, #dadada, #4a2933, #dadada);
+}
+.leftcolumn {
+  float: left;
+  width: 57%;
+  left: 30px;
+  position: relative;
+}
+.rightcolumn {
+  float: left;
+  width: 43%;
+  position: relative;
+  top: 180px;
+  right: 40px;
+  background: #f2f0f7;
+}
+.leftcolumn p {
+  font-size: 18px;
+  margin: 1px;
+  margin-left: 10px;
+}
+.kemampuan img {
+  margin-left: 15px;
+}
+.rightcolumn h2 {
+  text-align: center;
+}
+.rightcolumn ul {
+  list-style-image: url('assets/eclipse.png');
+}
+.rightcolumn ul li {
+  margin: 40px;
+  color: #4a2933;
+}
+.footer {
+  padding: 30px;
+}
+.f-leftcolumn {
+  float: left;
+  width: 57%;
+  margin-top: 40px;
+  left: 30px;
+}
+.f-leftcolumn p {
+  font-size: 18px;
+  margin-top: 1px;
+  margin-left: 10px;
+}
+.f-rightcolumn {
+  float: left;
+  width: 43%;
+  position: relative;
+  top: 180px;
+  right: 40px;
+}
+.f-rightcolumn img {
+  position: relative;
+  bottom: 80px;
+  left: 40px;
+  margin-right: 25px;
+  width: 40%;
+}
+a {
+  cursor: pointer;
+}
+a:link {
+  text-decoration: none;
+  color: #4a2933;
+}
+a:visited {
+  color: #613743;
+}
+a:hover {
+  color: #4a29339d;
+}
+a:active {
+  color: #4a2933;
+  font-weight: bold;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
