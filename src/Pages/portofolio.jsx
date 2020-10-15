@@ -4,7 +4,9 @@ const Portofolio = () => {
   return (
     <div className="container">
       <div className="row">
-        <h2>Portofolio</h2>
+        <button className="btn-portofolio" type="button">
+          Portofolio
+        </button>
       </div>
     </div>
   );

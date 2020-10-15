@@ -4,6 +4,9 @@ import eclipse2 from '../assets/eclipse2.png';
 import eclipse3 from '../assets/eclipse3.png';
 
 const Main = () => {
+  const circle = [<img src={eclipse} alt="a" />];
+  const circle2 = [<img src={eclipse2} alt="b" />];
+  const circle3 = [<img src={eclipse3} alt="c" />];
   const profiles = [
     'Nama : Rafif Yusuf Avandy',
     'Tempat,Tanggal Lahir : Bandung, 25 Oktober 2000',
@@ -14,14 +17,12 @@ const Main = () => {
     'Tinggi / Berat badan : 166 / 53',
     'Golongan Darah : O',
   ];
-
-  // const listProfile = profiles.map((profile) => <p>{profile}</p>);
-  const listProfile = profiles.map((profile) => {
-    return <p>{profile}</p>;
-  });
-  const circle = [<img src={eclipse} alt="a" />];
-  const circle2 = [<img src={eclipse2} alt="b" />];
-  const circle3 = [<img src={eclipse3} alt="c" />];
+  const studies = [
+    'SDN 1 Cijagra Kab.Bandung',
+    'SMPN 18 Bandung',
+    'SMAN 1 Dayeuhkolot',
+    'Telkom University',
+  ];
   const abilities = [
     { name: 'Codeigniter', skill: circle3 },
     { name: 'Laravel', skill: circle },
@@ -29,7 +30,10 @@ const Main = () => {
     { name: 'Java', skill: circle2 },
     { name: 'Basis Data', skill: circle3 },
   ];
-
+  // const listProfile = profiles.map((profile) => <p>{profile}</p>);
+  const listProfile = profiles.map((profile) => {
+    return <p>{profile}</p>;
+  });
   const listAbility = abilities.map((ability) => {
     return (
       <tr>
@@ -40,13 +44,6 @@ const Main = () => {
       </tr>
     );
   });
-
-  const studies = [
-    'SDN 1 Cijagra Kab.Bandung',
-    'SMPN 18 Bandung',
-    'SMAN 1 Dayeuhkolot',
-    'Telkom University',
-  ];
 
   const listStudies = studies.map((study) => {
     return <li>{study}</li>;
