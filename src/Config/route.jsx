@@ -1,4 +1,4 @@
-import { Main, Portofolio } from '../Pages';
+import { Profil, Portofolio } from '../Pages';
 
 const routes = [
   {
@@ -6,12 +6,12 @@ const routes = [
     component: Portofolio,
   },
   {
-    path: '/main',
-    component: Main,
+    path: '/profil',
+    component: Profil,
   },
   {
     path: '/',
-    component: Main,
+    component: Profil,
   },
 ];
 export default routes;

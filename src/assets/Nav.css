@@ -2,20 +2,24 @@
   background-color: #f1f1f1;
   color: #4a2933;
   border: none;
+  outline: none;
   cursor: pointer;
   padding: 20px;
-  margin-top: 100px;
+  margin-top: 70px;
   border-radius: 10px;
-  max-width: 300px;
+  width: 120px;
 }
+
 .dropdown {
   position: absolute;
   display: inline-block;
   right: 77%;
+  width: 120px;
 }
 .menu {
-  width: 10%;
+  width: 50%;
 }
+
 .dropdown-child {
   display: none;
   background-color: #f1f1f1;
@@ -30,4 +34,7 @@
 }
 .dropdown:hover .dropdown-child {
   display: block;
+}
+.dropdown-child a {
+  font-style: bold;
 }

@@ -104,7 +104,7 @@ hr.style2 {
 .rightcolumn h2 {
   text-align: center;
 }
-.rightcolumn ul {
+ul {
   list-style-image: url('assets/eclipse.png');
 }
 .rightcolumn ul li {
@@ -156,6 +156,31 @@ a:active {
   color: #4a2933;
   font-weight: bold;
 }
+
+/* Page Portofolio */
+.btn-portofolio {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #ffffff;
+}
+
+.list-portofolio {
+  padding: 10px;
+}
+
+.portofolio-rightcolumn {
+  float: right;
+  width: 60%;
+  position: relative;
+}
+
+.portofolio-rightcolumn p {
+  font-size: 18px;
+  margin: 1px;
+  margin-right: 20px;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
