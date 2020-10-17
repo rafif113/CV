@@ -7,7 +7,10 @@ const Header = () => {
     if (match.params.id === 'Profil' || match.params.id === null) {
       return <p className="style1">Mahasiswa Aktif Telkom University</p>;
     }
+    if (match.params.id === 'Portofolio') {
       return <p className="style1">{match.params.id}</p>;
+    }
+    return <p className="style1" />;
   };
   return (
     <div className="container">

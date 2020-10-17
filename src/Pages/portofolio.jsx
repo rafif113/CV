@@ -40,7 +40,9 @@ const Portofolio = () => {
           <h2>Pengalaman Berorganisasi</h2>
           <ul>
             {experiences
-              .filter((organisasi) => { return organisasi.nama === 'Organisasi'; })
+              .filter((organisasi) => {
+                return organisasi.nama === 'Organisasi';
+              })
               .map((organisasi) => {
                 return (
                   <li className="list-portofolio">
@@ -54,7 +56,9 @@ const Portofolio = () => {
           <h2>Pengalaman Akademik</h2>
           <ul>
             {experiences
-              .filter((akademik) => { return akademik.nama === 'Akademik'; })
+              .filter((akademik) => {
+                return akademik.nama === 'Akademik';
+              })
               .map((akademik) => {
                 return (
                   <li className="list-portofolio">
