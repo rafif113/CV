@@ -23,10 +23,11 @@ function getInitialMode() {
   // Mode tersimpan dark / light
   if (isReturningUser) {
     return savedMode;
-  } if (userPreferDark) {
+  }
+  if (userPreferDark) {
     return true;
   }
-    return false;
+  return false;
 
   // return savedMode || false;
 }
@@ -35,7 +36,9 @@ export const ThemeProvider = ({ children }) => {
   const [darkTheme, setDarkTheme] = useState(getInitialMode());
 
   const toggleTheme = () => {
-    setDarkTheme((prevDarkTheme) => { return !prevDarkTheme; });
+    setDarkTheme((prevDarkTheme) => {
+      return !prevDarkTheme;
+    });
   };
 
   React.useEffect(() => {

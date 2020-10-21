@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding: 10px;
@@ -9,28 +8,20 @@ body {
   align-items: center;
   animation: fadeIn 2s;
 }
-.container h2 {
-  font-family: arvo;
-  color: #4a2933;
-  font-weight: bold;
-}
-
-.container-dark h2 {
-  font-family: arvo;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-.container p {
-  color: #4a2933;
-}
-.container-dark p {
-  color: #ffffff;
-}
 td {
   padding-top: 10px;
   font-weight: bold;
 }
+hr {
+  margin: -26px 0;
+}
+ul {
+  list-style-image: url('assets/eclipse.png');
+}
+.row {
+  box-sizing: border-box;
+}
+/* CONTAINER--------------------------------------------------------------------- */
 .container {
   max-width: 800px;
   margin: auto;
@@ -39,7 +30,14 @@ td {
   padding: 10px;
   transition: background-color 0.25s ease-out;
 }
-
+.container p {
+  color: #4a2933;
+}
+.container h2 {
+  font-family: arvo;
+  color: #4a2933;
+  font-weight: bold;
+}
 .container-dark {
   max-width: 800px;
   margin: auto;
@@ -48,36 +46,23 @@ td {
   padding: 10px;
   transition: background-color 0.25s ease-in;
 }
+.container-dark p {
+  color: #ffffff;
+}
+.container-dark h2 {
+  font-family: arvo;
+  color: #ffffff;
+  font-weight: bold;
+}
+/* END OF CONTAINER ---------------------------------------------------------------- */
+
+/* HEADER -------------------------------------------------------------------------- */
 .header {
   padding: 30px;
-}
-.row {
-  box-sizing: border-box;
-}
-
-.h-leftcolumn {
-  float: left;
-  position: relative;
-  width: 35%;
 }
 .h-rightcolumn {
   float: left;
   width: 65%;
-}
-
-.h-leftcolumn-dark {
-  float: left;
-  position: relative;
-  width: 35%;
-}
-.h-rightcolumn-dark {
-  float: left;
-  width: 65%;
-}
-.h-leftcolumn img {
-  border-radius: 50%;
-  width: 190px;
-  height: 170px;
 }
 .h-rightcolumn h1 {
   font-family: arvo;
@@ -86,6 +71,16 @@ td {
   font-size: 310%;
   text-align: center;
 }
+.h-leftcolumn {
+  float: left;
+  position: relative;
+  width: 35%;
+}
+.h-leftcolumn img {
+  border-radius: 50%;
+  width: 190px;
+  height: 170px;
+}
 .h-rightcolumn-dark h1 {
   font-family: arvo;
   color: #ffffff;
@@ -93,8 +88,14 @@ td {
   font-size: 310%;
   text-align: center;
 }
-hr {
-  margin: -26px 0;
+.h-rightcolumn-dark {
+  float: left;
+  width: 65%;
+}
+.h-leftcolumn-dark {
+  float: left;
+  position: relative;
+  width: 35%;
 }
 hr.style1 {
   border: 0;
@@ -117,6 +118,9 @@ p.style1-dark {
   font-weight: bold;
   opacity: 0.9;
 }
+/* END OF HEADER -------------------------------------------------------------------- */
+
+/* RIGHT COLUMN --------------------------------------------------------------------- */
 hr.style2 {
   border: 0;
   height: 2px;
@@ -130,6 +134,11 @@ hr.style2 {
   left: 30px;
   position: relative;
 }
+.leftcolumn p {
+  font-size: 18px;
+  margin: 1px;
+  margin-left: 10px;
+}
 .rightcolumn {
   float: left;
   width: 43%;
@@ -138,7 +147,6 @@ hr.style2 {
   right: 40px;
   background: #fcfbff;
 }
-
 .rightcolumn h2 {
   text-align: center;
 }
@@ -146,7 +154,6 @@ hr.style2 {
   margin: 40px;
   color: #4a2933;
 }
-
 .rightcolumn-dark {
   float: left;
   width: 43%;
@@ -156,7 +163,6 @@ hr.style2 {
   background: #442c28;
   transition: background-color 0.25s ease-in;
 }
-
 .rightcolumn-dark h2 {
   text-align: center;
 }
@@ -164,19 +170,13 @@ hr.style2 {
   margin: 40px;
   color: #ffffff;
 }
-
-.leftcolumn p {
-  font-size: 18px;
-  margin: 1px;
-  margin-left: 10px;
-}
 .kemampuan img {
   margin-left: 15px;
 }
+/* END OF CONTENT -------------------------------------------------------- */
 
-ul {
-  list-style-image: url('assets/eclipse.png');
-}
+/* FOOTER ---------------------------------------------------------------- */
+
 .footer {
   padding: 30px;
 }

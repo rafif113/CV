@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme } from '../Component/themeContext';
+import { useTheme } from '../Config/themeContext';
 
 const Portofolio = () => {
   const darkTheme = useTheme();

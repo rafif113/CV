@@ -5,7 +5,7 @@ import Nav from './Component/nav';
 import Footer from './Component/footer';
 import routes from './Config/route';
 import './App.css';
-import { ThemeProvider } from './Component/themeContext';
+import { ThemeProvider } from './Config/themeContext';
 
 const App = () => {
   return (

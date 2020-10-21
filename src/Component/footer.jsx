@@ -1,7 +1,7 @@
 import React from 'react';
 import Instagram from '../assets/ig.jpg';
 import Line from '../assets/line.jpg';
-import { useTheme } from './themeContext';
+import { useTheme } from '../Config/themeContext';
 
 const Footer = () => {
   const darkTheme = useTheme();

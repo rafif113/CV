@@ -2,7 +2,7 @@ import React from 'react';
 import eclipse from '../assets/eclipse.png';
 import eclipse2 from '../assets/eclipse2.png';
 import eclipse3 from '../assets/eclipse3.png';
-import { useTheme } from '../Component/themeContext';
+import { useTheme } from '../Config/themeContext';
 
 const Main = () => {
   const darkTheme = useTheme();

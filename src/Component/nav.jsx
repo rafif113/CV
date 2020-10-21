@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/Nav.css';
 import { Link } from 'react-router-dom';
-import { useTheme, useThemeUpdate } from './themeContext';
+import { useTheme, useThemeUpdate } from '../Config/themeContext';
 import Menu from '../assets/menu.png';
 import Home from '../assets/home.png';
 import Sun from '../assets/sun.png';

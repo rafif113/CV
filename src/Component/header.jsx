@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import img2 from '../assets/img2.png';
-import { useTheme } from './themeContext';
+import { useTheme } from '../Config/themeContext';
 
 const Header = () => {
   const darkTheme = useTheme();
