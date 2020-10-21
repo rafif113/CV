@@ -5,25 +5,28 @@ import Nav from './Component/nav';
 import Footer from './Component/footer';
 import routes from './Config/route';
 import './App.css';
+import { ThemeProvider } from './Component/themeContext';
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Nav />
-      <Header />
-      <Switch>
-        {routes.map((route) => {
-          return (
-            <Route
-              path={route.path}
-              component={route.component}
-              key={route.path}
-            />
-          );
-        })}
-      </Switch>
-      <Footer />
-    </BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
+        <Nav />
+        <Header />
+        <Switch>
+          {routes.map((route) => {
+            return (
+              <Route
+                path={route.path}
+                component={route.component}
+                key={route.path}
+              />
+            );
+          })}
+        </Switch>
+        <Footer />
+      </BrowserRouter>
+    </ThemeProvider>
   );
 };
 

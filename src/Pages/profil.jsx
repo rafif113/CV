@@ -2,11 +2,17 @@ import React from 'react';
 import eclipse from '../assets/eclipse.png';
 import eclipse2 from '../assets/eclipse2.png';
 import eclipse3 from '../assets/eclipse3.png';
+import { useTheme } from '../Component/themeContext';
 
 const Main = () => {
+  const darkTheme = useTheme();
+  const themeClass = darkTheme ? 'container-dark' : 'container';
+  const themeClassEducation = darkTheme ? 'rightcolumn-dark' : 'rightcolumn';
+
   const circle = [<img src={eclipse} alt="a" />];
   const circle2 = [<img src={eclipse2} alt="b" />];
   const circle3 = [<img src={eclipse3} alt="c" />];
+
   const profiles = [
     'Nama : Rafif Yusuf Avandy',
     'Tempat,Tanggal Lahir : Bandung, 25 Oktober 2000',
@@ -30,7 +36,7 @@ const Main = () => {
     { name: 'Java', skill: circle2 },
     { name: 'Basis Data', skill: circle3 },
   ];
-  // const listProfile = profiles.map((profile) => <p>{profile}</p>);
+
   const listProfile = profiles.map((profile) => {
     return <p>{profile}</p>;
   });
@@ -50,7 +56,7 @@ const Main = () => {
   });
 
   return (
-    <div className="container">
+    <div className={themeClass}>
       <div className="row">
         <div className="leftcolumn">
           <h2>Profil</h2>
@@ -64,7 +70,7 @@ const Main = () => {
             <table cellSpacing="5">{listAbility}</table>
           </div>
         </div>
-        <div className="rightcolumn">
+        <div className={themeClassEducation}>
           <h2>Riwayat Pendidikan</h2>
           <ul>{listStudies}</ul>
         </div>

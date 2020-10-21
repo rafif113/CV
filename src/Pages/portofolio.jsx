@@ -1,6 +1,10 @@
 import React from 'react';
+import { useTheme } from '../Component/themeContext';
 
 const Portofolio = () => {
+  const darkTheme = useTheme();
+  const themeClass = darkTheme ? 'container-dark' : 'container';
+
   const experiences = [
     {
       nama: 'Organisasi',
@@ -34,7 +38,7 @@ const Portofolio = () => {
   ];
 
   return (
-    <div className="container">
+    <div className={themeClass}>
       <div className="row">
         <div className="leftcolumn">
           <h2>Pengalaman Berorganisasi</h2>

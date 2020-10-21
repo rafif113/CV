@@ -6,7 +6,6 @@
   cursor: pointer;
   padding: 20px;
   margin-top: 70px;
-  border-radius: 10px;
   width: 120px;
 }
 
@@ -37,4 +36,22 @@
 }
 .dropdown-child a {
   font-style: bold;
+}
+
+.btn-toogle {
+  background-color: #f1f1f1;
+  color: #4a2933;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px;
+  margin-top: 60px;
+  width: 120px;
+  position: absolute;
+  display: inline-block;
+  left: 77%;
+}
+
+.toogle {
+  width: 80%;
 }

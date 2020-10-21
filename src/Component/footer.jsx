@@ -1,14 +1,20 @@
 import React from 'react';
 import Instagram from '../assets/ig.jpg';
 import Line from '../assets/line.jpg';
+import { useTheme } from './themeContext';
 
 const Footer = () => {
+  const darkTheme = useTheme();
+  const themeClass = darkTheme ? 'container-dark' : 'container';
+  const linkClass = darkTheme ? 'link-dark' : 'link';
+
   const Coba = (link) => {
     return (
       <>
         linkedIn :
-        {' '}
-        <a href={link.name}>{link.nama}</a>
+        <a className={linkClass} href={link.name}>
+          {link.nama}
+        </a>
       </>
     );
   };
@@ -16,8 +22,9 @@ const Footer = () => {
     return (
       <>
         Instagram :
-        {' '}
-        <a href={ig.name}>{ig.nama}</a>
+        <a className={linkClass} href={ig.name}>
+          {ig.nama}
+        </a>
       </>
     );
   };
@@ -27,16 +34,16 @@ const Footer = () => {
     'Email : rafifyusuf@gmail.com',
     <Coba
       name="//www.linkedin.com/in/rafifyusuf113/"
-      nama="Rafif Yusuf Avandy"
+      nama=" Rafif Yusuf Avandy"
     />,
-    <Ig name="https://www.instagram.com/rafifbopip/" nama="rafifbopip" />,
+    <Ig name="https://www.instagram.com/rafifbopip/" nama=" rafifbopip" />,
   ];
   const listContacts = contacts.map((contact) => {
     return <p>{contact}</p>;
   });
 
   return (
-    <div className="container">
+    <div className={themeClass}>
       <div className="footer">
         <hr className="style1" />
         <div className="row">
